@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFE45E;
+    margin: 0px;
+    
+}
+
+p {
+    margin: 0;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+span {
+    color: #E5383B;
+}
+
+#red-bnr-tp {
+    background-color: #E5383B;
+    height: 56px;
+    width: 100%;
+}
+
+#red-bnr-txt {
+    padding-top: 10px;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+#sell-it-all {
+    padding: 18px;
+    font-size: 26px;
+    color: #023E7D;
+    
+}
+
+#domain-blowout {
+    padding: 16px;
+    color: #E5383B;
+    font-size: 80px;
+}
+
+#must-go {
+    font-size: 34px;
+    color: #0466C8;
+}
+
+#banner-main-container {
+    display: flex;
+    justify-content: center;
+}
+
+#prod-name {
+    font-size: 96px;
+    padding-top: 30px;
+    color: #0A0A0A;
+}
+
+#prod-tag {
+    padding-top: 10px;
+    font-size: 20px;
+    color: #666666;
+}
+
+#banner-main {
+    background-color: #FFFFFF;
+    border-style: solid;
+    border-color: #0466C8;
+    border-width: 5px;
+    border-radius: 15px;
+    height: 200px;
+    width: 840px;
+    margin-top: 50px;
+    transform: rotate(-3deg);
+}
