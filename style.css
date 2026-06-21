@@ -178,7 +178,7 @@ span {
 #features {
     display: flex;
     justify-content: space-around;
-    /* align-items: center; */
+    padding-bottom: 50px;
 }
 
 #feature-card--letters {
@@ -260,4 +260,16 @@ span {
     padding-top: 8px;
     font-size: 10px;
     color: #FFE45E;
+}
+
+#urgency-bar {
+    background-color: #E5383B;
+    height: 56px;
+    width: 100%;
+}
+
+#urgency-bar-text {
+    padding-top: 15px;
+    font-size: 22px;
+    color: #FFFFFF;
 }
