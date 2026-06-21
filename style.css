@@ -20,54 +20,53 @@ span {
     color: #E5383B;
 }
 
-#red-bnr-tp {
+#promo-bar {
     background-color: #E5383B;
     height: 56px;
     width: 100%;
 }
 
-#red-bnr-txt {
+#promo-bar__text {
     padding-top: 10px;
     font-size: 22px;
     color: #FFFFFF;
 }
 
-#sell-it-all {
+#hero__urgency {
     padding: 18px;
     font-size: 26px;
     color: #023E7D;
-    
 }
 
-#domain-blowout {
+#hero__headline {
     padding: 16px;
     color: #E5383B;
     font-size: 80px;
 }
 
-#must-go {
+#hero__subtext {
     font-size: 34px;
     color: #0466C8;
 }
 
-#banner-main-container {
+#listing-card__wrapper {
     display: flex;
     justify-content: center;
 }
 
-#prod-name {
+#listing-card__domain {
     font-size: 96px;
     padding-top: 30px;
     color: #0A0A0A;
 }
 
-#prod-tag {
+#listing-card__subtitle {
     padding-top: 10px;
     font-size: 20px;
     color: #666666;
 }
 
-#banner-main {
+#listing-card {
     background-color: #FFFFFF;
     border-style: solid;
     border-color: #0466C8;
@@ -80,13 +79,13 @@ span {
     transform: rotate(-3deg);
 }
 
-#splash-bang-container {
+#price-section {
     display: flex;
     justify-content: center;
     gap: 300px;
 }
 
-#left {
+#price-section__copy {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -95,39 +94,38 @@ span {
     rotate: 10deg;
 }
 
-#slashed {
+#price-section__headline {
     color: #0466C8;
     font-size: 30px;
     font-weight: 600;
     padding-bottom: 20px;
 }
 
-#low-prices {
+#price-section__subtext {
     font-size: 18px;
     font-weight: 600;
     color: #0A0A0A;
 }
 
-#tears {
+#price-section__disclaimer {
     font-size: 14px;
     color: #666666;
 }
 
-#right {
+#price-section__starburst {
     position: relative;
     rotate: -10deg;
-
 }
 
 #starburst {
     background-color: #E5383B;
     rotate: 14deg;
-    width: 300px; /* adjust to control the size */
+    width: 300px;
     aspect-ratio: 1;
     clip-path: polygon(99.8% 54.44%,78.17% 60.31%,90.91% 78.75%,69.24% 73.01%,71.05% 95.35%,55.16% 79.55%,45.56% 99.8%,39.69% 78.17%,21.25% 90.91%,26.99% 69.24%,4.65% 71.05%,20.45% 55.16%,0.2% 45.56%,21.83% 39.69%,9.09% 21.25%,30.76% 26.99%,28.95% 4.65%,44.84% 20.45%,54.44% 0.2%,60.31% 21.83%,78.75% 9.09%,73.01% 30.76%,95.35% 28.95%,79.55% 44.84%,99.8% 54.44%,78.17% 60.31%,calc(78.17% - 11.27px) calc(60.31% - 4.12px),calc(99.8% - 19.92px) calc(54.44% - 1.78px),calc(79.55% - 11.82px) calc(44.84% - -2.06px),calc(95.35% - 18.14px) calc(28.95% - -8.42px),calc(73.01% - 9.21px) calc(30.76% - -7.7px),calc(78.75% - 11.5px) calc(9.09% - -16.36px),calc(60.31% - 4.12px) calc(21.83% - -11.27px),calc(54.44% - 1.78px) calc(0.2% - -19.92px),calc(44.84% - -2.06px) calc(20.45% - -11.82px),calc(28.95% - -8.42px) calc(4.65% - -18.14px),calc(30.76% - -7.7px) calc(26.99% - -9.21px),calc(9.09% - -16.36px) calc(21.25% - -11.5px),calc(21.83% - -11.27px) calc(39.69% - -4.12px),calc(0.2% - -19.92px) calc(45.56% - -1.78px),calc(20.45% - -11.82px) calc(55.16% - 2.06px),calc(4.65% - -18.14px) calc(71.05% - 8.42px),calc(26.99% - -9.21px) calc(69.24% - 7.7px),calc(21.25% - -11.5px) calc(90.91% - 16.36px),calc(39.69% - -4.12px) calc(78.17% - 11.27px),calc(45.56% - -1.78px) calc(99.8% - 19.92px),calc(55.16% - 2.06px) calc(79.55% - 11.82px),calc(71.05% - 8.42px) calc(95.35% - 18.14px),calc(69.24% - 7.7px) calc(73.01% - 9.21px),calc(90.91% - 16.36px) calc(78.75% - 11.5px),calc(78.17% - 11.27px) calc(60.31% - 4.12px),calc(99.8% - 19.92px) calc(54.44% - 1.78px));
 }
 
-#was {
+#starburst__was {
     font-size: 24px;
     width: 110px;
     top: 75px;
@@ -139,7 +137,7 @@ span {
     margin: 0;
 }
 
-#now {
+#starburst__now {
     font-size: 24px;
     width: 110px;
     margin: 0;
@@ -151,7 +149,7 @@ span {
     color: #0A0A0A;
 }
 
-#money {
+#starburst__price {
     font-size: 18px;
     width: 110px;
     margin: 0;
@@ -163,3 +161,15 @@ span {
     color: #666666;
 }
 
+#feature-bar {
+    margin-top: 25px;
+    background-color: #0466C8;
+    height: 56px;
+    width: 100%;
+}
+
+#feature-bar__text {
+    padding-top: 10px;
+    font-size: 22px;
+    color: #FFE45E;
+}
