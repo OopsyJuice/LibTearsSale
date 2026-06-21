@@ -166,10 +166,98 @@ span {
     background-color: #0466C8;
     height: 56px;
     width: 100%;
+    margin-bottom: 30px;
 }
 
 #feature-bar__text {
     padding-top: 10px;
     font-size: 22px;
+    color: #FFE45E;
+}
+
+#features {
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+}
+
+#feature-card--letters {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5383B;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border-width: 6px;
+    margin-left: 400px;
+}
+
+#feature-card-9 {
+    color: #FFFFFF;
+    font-size: 46px;
+    padding-bottom: 10px;
+
+}
+
+#feature-card-whole {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+#feature-card--domain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #0466C8;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border-width: 6px;
+}
+
+#feature-card-100 {
+    color: #FFFFFF;
+    font-size: 46px;
+    padding-bottom: 10px;
+}
+
+#feature-card-real {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+#feature-card--price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #E5383B;
+    border-style: solid;
+    border-color: #FFFFFF;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    border-width: 6px;
+    margin-right: 400px;
+}
+
+#feature-card-zero {
+    color: #FFFFFF;
+    font-size: 46px;
+    padding-bottom: 10px;
+}
+
+#feature-card-money {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+#still {
+    padding-top: 8px;
+    font-size: 10px;
     color: #FFE45E;
 }
