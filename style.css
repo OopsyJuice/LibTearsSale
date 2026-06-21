@@ -1,15 +1,19 @@
+/* * {
+    border-style: solid;
+    border-color: red;
+} */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FFE45E;
-    margin: 0px;
-    
+    margin: 0;
 }
 
 p {
     margin: 0;
     font-weight: 600;
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 3px;
 }
 
 span {
@@ -72,5 +76,90 @@ span {
     height: 200px;
     width: 840px;
     margin-top: 50px;
+    margin-bottom: 25px;
     transform: rotate(-3deg);
 }
+
+#splash-bang-container {
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 100px;
+    margin-left: 25px;
+    rotate: 10deg;
+}
+
+#slashed {
+    color: #0466C8;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+#low-prices {
+    font-size: 18px;
+    font-weight: 600;
+    color: #0A0A0A;
+}
+
+#tears {
+    font-size: 14px;
+    color: #666666;
+}
+
+#right {
+    position: relative;
+    rotate: -10deg;
+
+}
+
+#starburst {
+    background-color: #E5383B;
+    rotate: 14deg;
+    width: 300px; /* adjust to control the size */
+    aspect-ratio: 1;
+    clip-path: polygon(99.8% 54.44%,78.17% 60.31%,90.91% 78.75%,69.24% 73.01%,71.05% 95.35%,55.16% 79.55%,45.56% 99.8%,39.69% 78.17%,21.25% 90.91%,26.99% 69.24%,4.65% 71.05%,20.45% 55.16%,0.2% 45.56%,21.83% 39.69%,9.09% 21.25%,30.76% 26.99%,28.95% 4.65%,44.84% 20.45%,54.44% 0.2%,60.31% 21.83%,78.75% 9.09%,73.01% 30.76%,95.35% 28.95%,79.55% 44.84%,99.8% 54.44%,78.17% 60.31%,calc(78.17% - 11.27px) calc(60.31% - 4.12px),calc(99.8% - 19.92px) calc(54.44% - 1.78px),calc(79.55% - 11.82px) calc(44.84% - -2.06px),calc(95.35% - 18.14px) calc(28.95% - -8.42px),calc(73.01% - 9.21px) calc(30.76% - -7.7px),calc(78.75% - 11.5px) calc(9.09% - -16.36px),calc(60.31% - 4.12px) calc(21.83% - -11.27px),calc(54.44% - 1.78px) calc(0.2% - -19.92px),calc(44.84% - -2.06px) calc(20.45% - -11.82px),calc(28.95% - -8.42px) calc(4.65% - -18.14px),calc(30.76% - -7.7px) calc(26.99% - -9.21px),calc(9.09% - -16.36px) calc(21.25% - -11.5px),calc(21.83% - -11.27px) calc(39.69% - -4.12px),calc(0.2% - -19.92px) calc(45.56% - -1.78px),calc(20.45% - -11.82px) calc(55.16% - 2.06px),calc(4.65% - -18.14px) calc(71.05% - 8.42px),calc(26.99% - -9.21px) calc(69.24% - 7.7px),calc(21.25% - -11.5px) calc(90.91% - 16.36px),calc(39.69% - -4.12px) calc(78.17% - 11.27px),calc(45.56% - -1.78px) calc(99.8% - 19.92px),calc(55.16% - 2.06px) calc(79.55% - 11.82px),calc(71.05% - 8.42px) calc(95.35% - 18.14px),calc(69.24% - 7.7px) calc(73.01% - 9.21px),calc(90.91% - 16.36px) calc(78.75% - 11.5px),calc(78.17% - 11.27px) calc(60.31% - 4.12px),calc(99.8% - 19.92px) calc(54.44% - 1.78px));
+}
+
+#was {
+    font-size: 24px;
+    width: 110px;
+    top: 75px;
+    left: 100px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: #0466C8;
+    margin: 0;
+}
+
+#now {
+    font-size: 24px;
+    width: 110px;
+    margin: 0;
+    top: 135px;
+    left: 100px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: #0A0A0A;
+}
+
+#money {
+    font-size: 18px;
+    width: 110px;
+    margin: 0;
+    top: 195px;
+    left: 100px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    color: #666666;
+}
+
