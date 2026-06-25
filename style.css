@@ -3,6 +3,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #FFE45E;
     margin: 0;
+    overflow-x: hidden;
 }
 
 p {
@@ -16,32 +17,56 @@ span {
     color: #E5383B;
 }
 
-#promo-bar {
+/* marquee container */
+.promo-bar {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    white-space: nowrap;
+    align-items: center;
     background-color: #E5383B;
     height: 56px;
     width: 100%;
 }
 
-#promo-bar__text {
-    padding-top: 10px;
-    font-size: 22px;
+/* marquee item */
+.promo-bar__text {
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-name: marquee-content;
+    animation-timing-function: linear;
+    min-width: 100%;
+    font-size: clamp(12px, 2vw, 22px);
     color: #FFFFFF;
+}
+
+.promo-bar:hover .promo-bar__text{
+    animation-play-state: paused;
+}
+
+@keyframes marquee-content {
+	from {
+		transform: translateX( 0% );
+    }
+	to {
+		transform: translateX( -100% );
+    }
 }
 
 #hero__urgency {
     padding: 18px;
-    font-size: 26px;
+    font-size: clamp(16px, 3vw, 26px);
     color: #023E7D;
 }
 
 #hero__headline {
     padding: 16px;
     color: #E5383B;
-    font-size: 80px;
+    font-size: clamp(36px, 8vw, 80px);
 }
 
 #hero__subtext {
-    font-size: 34px;
+    font-size: clamp(18px, 3.5vw, 34px);
     color: #0466C8;
 }
 
@@ -51,14 +76,14 @@ span {
 }
 
 #listing-card__domain {
-    font-size: 96px;
+    font-size: clamp(36px, 9vw, 96px);
     padding-top: 30px;
     color: #0A0A0A;
 }
 
 #listing-card__subtitle {
     padding-top: 10px;
-    font-size: 20px;
+    font-size: clamp(10px, 1.5vw, 20px);
     color: #666666;
 }
 
@@ -68,17 +93,18 @@ span {
     border-color: #0466C8;
     border-width: 5px;
     border-radius: 15px;
-    height: 200px;
-    width: 840px;
+    padding-bottom: 50px;
+    max-width: 840px;
+    width: 90%;
     margin-top: 50px;
     margin-bottom: 25px;
-    transform: rotate(-3deg);
+    transform: rotate(-5deg);
 }
 
 #price-section {
     display: flex;
     justify-content: center;
-    gap: 300px;
+    gap: clamp(20px, 8vw, 300px);
 }
 
 #price-section__copy {
@@ -158,23 +184,25 @@ span {
 }
 
 #feature-bar {
-    margin-top: 25px;
+    margin-top: 10px;
     background-color: #0466C8;
     height: 56px;
     width: 100%;
-    margin-bottom: 30px;
+
 }
 
 #feature-bar__text {
     padding-top: 10px;
-    font-size: 22px;
+    font-size: clamp(14px, 2.5vw, 22px);
     color: #FFE45E;
 }
 
 #features {
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: clamp(3px, 2.5vw, 75px);
+    padding: 50px 5%;
 }
 
 #feature-card--letters {
@@ -185,22 +213,20 @@ span {
     border-style: solid;
     border-color: #FFFFFF;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    border-width: 6px;
-    margin-left: 400px;
+    width: clamp(100px, 15vw, 200px);
+    aspect-ratio: 1;
+    border-width: 3px;
 }
 
 #feature-card-9 {
     color: #FFFFFF;
-    font-size: 46px;
+    font-size: clamp(12px, 3vw, 46px);
     padding-bottom: 10px;
-
 }
 
 #feature-card-whole {
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: clamp(10px, 1vw, 18px);
 }
 
 #feature-card--domain {
@@ -211,51 +237,52 @@ span {
     border-style: solid;
     border-color: #FFFFFF;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    border-width: 6px;
+    width: clamp(100px, 15vw, 200px);
+    aspect-ratio: 1;
+    border-width: 3px;
 }
 
 #feature-card-100 {
     color: #FFFFFF;
-    font-size: 46px;
+    font-size: clamp(12px, 3vw, 46px);
     padding-bottom: 10px;
 }
 
 #feature-card-real {
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: clamp(10px, 1vw, 18px);
 }
 
 #feature-card--price {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     background-color: #E5383B;
     border-style: solid;
     border-color: #FFFFFF;
     border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    border-width: 6px;
-    margin-right: 400px;
+    width: clamp(100px, 15vw, 200px);
+    aspect-ratio: 1;
+    border-width: 3px;
 }
 
 #feature-card-zero {
     color: #FFFFFF;
-    font-size: 46px;
+    font-size: clamp(10px, 3vw, 46px);
     padding-bottom: 10px;
 }
 
 #feature-card-money {
     color: #FFFFFF;
-    font-size: 18px;
+    font-size: clamp(10px, 1vw, 18px);
 }
 
 #still {
     padding-top: 8px;
-    font-size: 10px;
+    font-size: clamp(0px ,1vw, 10px);
     color: #FFE45E;
+    letter-spacing: 0px;
 }
 
 #urgency-bar {
@@ -316,6 +343,7 @@ form {
     border-color:#0466C8;
     border-width: 3px;
     border-style: solid;
+    padding-left: 10px;
 }
 
 #email {
@@ -325,6 +353,7 @@ form {
     border-color:#0466C8;
     border-width: 3px;
     border-style: solid;
+    padding-left: 10px;
 }
 
 #offer-ammount {
@@ -334,6 +363,7 @@ form {
     border-color:#0466C8;
     border-width: 3px;
     border-style: solid;
+    padding-left: 10px;
 }
 
 button {
@@ -348,10 +378,6 @@ button {
     font-size: 26px;
 }
 
-::placeholder {
-    padding-left: 10px;
-}
-
 #footer-disclaimer {
     color: #7A5A00;
     font-size: 13px;
@@ -359,4 +385,6 @@ button {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+
 
