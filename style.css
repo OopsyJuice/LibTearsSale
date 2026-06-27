@@ -60,7 +60,8 @@ span {
 }
 
 #hero__headline {
-    padding: 16px;
+    /* padding: 16px; */
+    margin-bottom: 16px;
     color: #E5383B;
     font-size: clamp(36px, 8vw, 80px);
 }
@@ -184,15 +185,15 @@ span {
 }
 
 #feature-bar {
-    margin-top: 10px;
+    margin-top: 15px;
     background-color: #0466C8;
-    height: 56px;
     width: 100%;
 
 }
 
 #feature-bar__text {
-    padding-top: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-size: clamp(14px, 2.5vw, 22px);
     color: #FFE45E;
 }
@@ -287,13 +288,13 @@ span {
 
 #urgency-bar {
     background-color: #E5383B;
-    height: 56px;
     width: 100%;
 }
 
 #urgency-bar-text {
     padding-top: 15px;
-    font-size: 22px;
+    padding-bottom: 15px;
+    font-size: clamp(14px, 2.5vw, 22px);
     color: #FFFFFF;
 }
 
