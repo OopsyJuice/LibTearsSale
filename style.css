@@ -310,8 +310,8 @@ span {
     border-radius: 15px;
     margin-top: 54px;
     background-color: #FFFFFF;
-    width: 800px;
-    height: 350px;
+    max-width: 800px;
+    width: 90%;
 }
 
 #form-card-title {
@@ -328,18 +328,22 @@ span {
 
 form {
     padding-top: 10px;
+    width: 100%;
 }
 
 #form-fields {
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    gap: 20px;
     justify-content: center;
+    box-sizing: border-box;
+    padding: 0 20px 25px;
 }
 
 #name {
     height: 50px;
-    width: 330px;
+    max-width: 330px;
+    width: 100%;
     border-radius: 12px;
     border-color:#0466C8;
     border-width: 3px;
@@ -349,7 +353,8 @@ form {
 
 #email {
     height: 50px;
-    width: 330px;
+    max-width: 330px;
+    width: 100%;
     border-radius: 12px;
     border-color:#0466C8;
     border-width: 3px;
@@ -359,7 +364,8 @@ form {
 
 #offer-ammount {
     height: 50px;
-    width: 700px;
+    max-width: 700px;
+    width: 100%;
     border-radius: 12px;
     border-color:#0466C8;
     border-width: 3px;
@@ -368,8 +374,8 @@ form {
 }
 
 button {
-    width: 700px;
-    height: 56px;
+    width: 100%;
+    max-width: 720px;
     color: #FFFFFF;
     background-color: #E5383B;
     border-radius: 12px;
@@ -377,6 +383,8 @@ button {
     border-width: 3px;
     border-style: solid;
     font-size: 26px;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 #footer-disclaimer {
