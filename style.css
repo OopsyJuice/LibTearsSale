@@ -382,7 +382,7 @@ button {
     border-color: #FFE45E;
     border-width: 3px;
     border-style: solid;
-    font-size: 26px;
+    font-size: clamp(12px, 2vw, 26px);
     padding-bottom: 10px;
     padding-top: 10px;
 }
